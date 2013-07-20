@@ -1,0 +1,25 @@
+/*-------------------- Defaults --------------------*/
+html {
+	font: 12px/1 Helvetica, Arial, sans-serif;
+}
+a {
+	text-decoration: none;
+/* 	color: #5cb; */
+}
+/*-------------------- Header --------------------*/
+h1{
+	float: left;
+}
+/*-------------------- Navigation --------------------*/
+nav ul {
+	display: inline;
+	list-style-type: none;
+}
+nav li {
+	float: left;
+	margin: 25px 10px;
+}
+/*-------------------- Content --------------------*/
+header {
+	clear: both;
+}
