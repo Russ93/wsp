@@ -1,0 +1,228 @@
+/*-------------------- Defaults --------------------*/
+html {
+	font: .75em/1 Avenir, Helvetica, Arial, sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+a:hover {
+	color: #2ab2ae;
+}
+.active {
+	color: #74c936;
+}
+section{
+	margin-top: 26px;
+}
+section img {
+	padding: 5px;
+	border: solid 2px #999;
+}
+.line {
+	border-bottom: solid 1px #2ab2ae;
+	margin-bottom: 15px;
+}
+p {
+	font-size: 1em;
+}
+select {
+	border: solid 1px #999;
+	border-radius: 2px;
+	height: 35px;
+}
+input {
+	border: solid 1px #999;
+	border-radius: 2px;
+	height: 35px;
+}
+textarea {
+	border: solid 1px #999;
+	border-radius: 2px;
+}
+/*-------------------- Header --------------------*/
+h1{
+	float: left;
+	margin-left: 25px;
+}
+h1 a{
+	display: block;
+	background: url(../images/logo.gif) no-repeat;
+	background-size: contain;
+	width: 235px;
+	height: 185px;
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.375em;
+}
+header h2{
+	font: 3em/1 amatic, helvetica, arial, sans-serif;
+	margin-bottom: 26px;
+}
+/*-------------------- Navigation --------------------*/
+nav ul {
+	font: 2.25em/1 Amatic, helvetica, arial, sans-serif;
+	display: inline;
+	list-style-type: none;
+}
+nav li {
+	float: left;
+	margin: 145px 0 25px 25px;
+}
+/*-------------------- Content --------------------*/
+.button {
+	text-align: center;
+	font-size: 16px;
+	padding: 10px 10px 0;
+	background: #2ab2ae;
+	height: 30px;
+	width: 100px;
+	margin-left: 20px;
+	color: #eee;
+	text-transform: capitalize;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	border: 0;
+}
+.submit {
+	padding: 0;
+	margin-top: 15px;
+}
+.radiobutton {
+	float: left;
+	text-align: center;
+	background-color: #ddd;
+	display: block;
+	margin-left: 10px;
+	margin-top: 26px;
+}
+.replacement {
+	line-height: 45px;
+	width: 120px;
+}
+.size { 
+	line-height: 32px;
+	width: 32px;
+}
+.radio {
+	display: none;
+}
+.radio:checked + .replacement, .radio:checked + .size { 
+	background-color: #2ab2ae;
+	color: #eee;
+}
+.fig {
+	padding-top: 70px;
+}
+figure {
+	margin-bottom: 26px;
+}
+.nosection {
+	margin-top: 0;
+}
+.caption {
+	padding-top: 4%;
+}
+.caption figcaption {
+	line-height: 1.25; 
+}
+.alert {
+	color: #f11;
+}
+.contact label {
+	font-size: 1.25em;
+	margin: 10px 0;
+}
+.cinfo {
+	font-size: 1.2em;
+}
+fieldset {
+	border: none;
+}
+.bot {
+	margin: 26px 0;
+}
+.price {
+	font-size: 2em;
+	color: #f11;
+}
+/*-------------------- CTA --------------------*/
+.cta{
+	overflow: hidden;
+	border-radius: 5px;
+	max-height: 300px;
+}
+.box {
+	width: 305px;
+	height: 136px;
+	border-radius: 5px;
+	color: #eee;
+}
+.box h2 {
+	padding: 10px;
+	margin: 0px;
+	color: #173643;
+}
+.box p {
+	padding: 0 15px;
+	margin: 0;
+}
+.media {
+	background: url(../images/media.png) right top no-repeat #596f7a;
+	margin-bottom: 26px;
+}
+.social {
+	background: url(../images/social.png) right top no-repeat #11658b;
+}
+/*-------------------- Footer --------------------*/
+footer {
+	text-align: center;
+	margin: 46px 0;
+}
+footer a{
+	color: #2ab2ae;
+}
+/*-------------------- @Media --------------------*/
+@media screen and (max-width: 996px){
+	body{
+		width: 100%;
+		margin-top: 50px;
+		padding: 0;
+	}
+	nav.grid_11.prefix_1{
+		top: -1px;
+		z-index: 99;
+		width: 100%;
+		position: fixed;
+		float: left;
+		background-color: #3d8199;
+		overflow: hidden;
+	}
+	nav.grid_11.prefix_1 ul {
+		font-size: 1.5em;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	nav ul li{
+		width: 14%;
+		margin: 0;
+		padding: 0;
+	}
+	nav h1 {
+		height: 0;
+		width: 0;
+		background: none;
+		text-indent: -99999px;
+		overflow: hidden;
+	}
+	.box {
+		width: 100%;
+	}
+	
+}
