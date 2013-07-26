@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" />
 	<link rel="stylesheet" href="css/grid.css" type="text/css" />
 	<link rel="stylesheet" href="css/main.css" type="text/css" />
@@ -25,9 +26,9 @@
 		</ul>
 	</nav>
 	<header class="grid_12 line">
-		<h2 class="grid_2"> Donate </h2>
-		<h2 class="grid_3"> To a Cause that has</h2>	
-		<h2 class="grid_3"> NO over head fees </h2>
+		<h2 class="grid_2 donate"> Donate </h2>
+		<h2 class="grid_3 donate"> To a Cause that has</h2>	
+		<h2 class="grid_3 donate"> NO over head fees </h2>
 	</header>
 	<section class="grid_12">
 		<fieldset class="grid_5 alpha omega">
@@ -35,11 +36,11 @@
 			<p> To give & Helps Lives </p>
 			<form>
 			<div class="grid_5">
-			<input type="checkbox" name="10" value="amount" class="radio"><label class="radiobutton size">$10</label>
-			<input type="checkbox" name="25" value="amount" class="radio"><label class="radiobutton size">$25 </label>
-			<input type="checkbox" name="100" value="amount" class="radio"><label class="radiobutton size">$100</label>
-			<input type="checkbox" name="250" value="amount" class="radio"><label class="radiobutton size">$250 </label>
-			<input type="checkbox" name="250" value="amount" class="radio"><label class="radiobutton size">$300 </label>
+			<input type="checkbox" name="10" value="amount" class="radio" id="10"><label class="radiobutton size" for="10">$10</label>
+			<input type="checkbox" name="25" value="amount" class="radio" id="25"><label for="25" class="radiobutton size">$25 </label>
+			<input type="checkbox" name="100" value="amount" class="radio" id="100"><label class="radiobutton size" for="100">$100</label>
+			<input type="checkbox" name="250" value="amount" class="radio" id="250"><label for="250" class="radiobutton size">$250 </label>
+			<input type="checkbox" name="250" value="amount" class="radio" id="300"><label for="300" class="radiobutton size">$300 </label>
 			</div>
 			<div class="grid_4 bot">
 			<label> Other Amount </label> <input type="text" name="user">
@@ -50,8 +51,8 @@
 			<h3> Multiply your Impact optional </h3>
 			<label class="monthly push_1">Monthly Donation </label>
 			<hr />
-			<label> Make This Donation</label>
-			<select>
+			<label class="grid_2"> Make This Donation</label>
+			<select class="grid_3">
 				<option>In Honor Of</option>
 				<option>In Memory Of</option>
 				<option>Sponsored By</option>

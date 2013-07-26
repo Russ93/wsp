@@ -209,6 +209,7 @@ footer a{
 	}
 	.container nav.grid_11.prefix_1 {
 		margin-left: 0;
+		margin-right: 0;
 	}
 	nav.grid_11 ul {
 		font-size: 1.5em;
@@ -218,17 +219,24 @@ footer a{
 	}
 	nav ul li{
 		width: 14%;
-		margin: 0;
+		margin: 1.25%;
 		padding: 0;
 	}
-	nav h1 {
+	nav.grid_11.prefix_1 h1 {
 		height: 0;
 		width: 0;
 		background: none;
 		overflow: hidden;
+		display: none;
 	}
 	.box {
 		width: 100%;
 	}
-	
+	.container h2.donate {
+		font-size: 1.75em;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
