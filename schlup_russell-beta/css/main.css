@@ -189,12 +189,16 @@ footer a{
 }
 /*-------------------- @Media --------------------*/
 @media screen and (max-width: 996px){
+	html{
+		margin: 0;
+		padding: 0;
+	}
 	body{
 		width: 100%;
 		margin-top: 50px;
 		padding: 0;
 	}
-	nav.grid_11.prefix_1{
+	nav.grid_11{
 		top: -1px;
 		z-index: 99;
 		width: 100%;
@@ -203,7 +207,10 @@ footer a{
 		background-color: #3d8199;
 		overflow: hidden;
 	}
-	nav.grid_11.prefix_1 ul {
+	.container nav.grid_11.prefix_1 {
+		margin-left: 0;
+	}
+	nav.grid_11 ul {
 		font-size: 1.5em;
 		width: 100%;
 		margin: 0;
@@ -218,7 +225,6 @@ footer a{
 		height: 0;
 		width: 0;
 		background: none;
-		text-indent: -99999px;
 		overflow: hidden;
 	}
 	.box {
