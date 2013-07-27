@@ -1,16 +1,46 @@
 <!DOCTYPE html>
-<html>
 <head>
 	<meta charset="utf-8" />
+	<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="css/normalize.css" type="text/css" />
 	<link rel="stylesheet" href="css/grid.css" type="text/css" />
 	<link rel="stylesheet" href="css/main.css" type="text/css" />
 	<script src="js/modernizr-2.6.2.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+	  window.fbAsyncInit = function() {
+	    // init the FB JS SDK
+	    FB.init({
+	      appId      : 'YOUR_APP_ID',                        // App ID from the app dashboard
+	      channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel file for x-domain comms
+	      status     : true,                                 // Check Facebook Login status
+	      xfbml      : true                                  // Look for social plugins on the page
+	    });
+	
+	    // Additional initialization code such as adding Event Listeners goes here
+	  };
+	
+	  // Load the SDK asynchronously
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/all.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
 	<title>Safe House Movement</title>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="container">
 	<nav class="grid_11 prefix_1">
 		<ul>
@@ -39,17 +69,19 @@
 		<div class="social box">
 			<h2> Safehouse's Facebook </h2>
 			<p> Like us on Facebook to stay updated.</p>
+			<div class="fb-like" data-href="https://www.facebook.com/safehousemovement" data-send="true" data-width="450" data-show-faces="true" data-font="arial">
+		</div>
 		</div>
 	</aside>
 	<section class="grid_12 line">
 		<h2> What Is the Safehouse Movement? </h2>
-		<p> The Safehouse movement is a non-profit organization that shelters orphans, halts human trafficing, and help those in extreme strife in south america. Unlike anyother charities out there SafeHouse Movement, Inc. has never used $0.01 of donated money to operational and/or overhead costs. ALL donated money has gone to the actual cause. SafeHouse has no paid employees or contractors.</p>
+		<p> The Safehouse movement is a non-profit organization that shelters orphans, halts human trafficking, and help those in extreme strife in south america. Unlike another charities out there SafeHouse Movement, Inc. has never used $0.01 of donated money to operational and/or overhead costs. ALL donated money has gone to the actual cause. SafeHouse has no paid employees or contractors.</p>
 		<a href="projects.html"><h3 class="button">read more ></h3></a>
 	</section>
 	<section class="update grid_12">
 		<img src="images/update.jpg" alt="newest image" height="217" width="290" class="grid_4" />
 		<h2> Newest Update </h2>
-		<p> Today we just took in more orphans and a we were able to set up new tents everywhere. We also just got many scholar volunteers to join the movement and now we can teach these children the basic knowlage that every american can in a public school system. This is all thanks to everyone out there showing thier support by donateing, volunteering, and buying our t-shirt it’s thanks to you that all of this is possible. </p>
+		<p> Today we just took in more orphans and a we were able to set up new tents everywhere. We also just got many scholar volunteers to join the movement and now we can teach these children the basic knowledge that every american can in a public school system. This is all thanks to everyone out there showing their support by donating, volunteering, and buying our t-shirt it’s thanks to you that all of this is possible. </p>
 	</section>
 	<footer class="grid_12">
     	<a href="">Home </a>|
