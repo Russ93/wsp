@@ -62,12 +62,12 @@ h3 {
 	font-size: 1.375em;
 }
 header h2{
-	font: 3em/1 amatic, helvetica, arial, sans-serif;
+	font: 3em/1 "Amatic SC", helvetica, arial, sans-serif;
 	margin-bottom: 26px;
 }
 /*-------------------- Navigation --------------------*/
 nav ul {
-	font: 2.25em/1 Amatic, helvetica, arial, sans-serif;
+	font: 2.25em/1 "Amatic SC", helvetica, arial, sans-serif;
 	display: inline;
 	list-style-type: none;
 }
