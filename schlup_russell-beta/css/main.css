@@ -220,6 +220,10 @@ fieldset {
 	background: url(../images/social.png) right top no-repeat #11658b;
 }
 
+#thing.fb-like {
+	max-width: 250px;
+}
+
 /*--------------------Footer --------------------*/
 footer {
 	text-align: center;
