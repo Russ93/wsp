@@ -8,28 +8,6 @@
 	<link rel="stylesheet" href="css/main.css" type="text/css" />
 	<script src="js/modernizr-2.6.2.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
-	<script>
-	  window.fbAsyncInit = function() {
-	    // init the FB JS SDK
-	    FB.init({
-	      appId      : 'YOUR_APP_ID',                        // App ID from the app dashboard
-	      channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel file for x-domain comms
-	      status     : true,                                 // Check Facebook Login status
-	      xfbml      : true                                  // Look for social plugins on the page
-	    });
-	
-	    // Additional initialization code such as adding Event Listeners goes here
-	  };
-	
-	  // Load the SDK asynchronously
-	  (function(d, s, id){
-	     var js, fjs = d.getElementsByTagName(s)[0];
-	     if (d.getElementById(id)) {return;}
-	     js = d.createElement(s); js.id = id;
-	     js.src = "//connect.facebook.net/en_US/all.js";
-	     fjs.parentNode.insertBefore(js, fjs);
-	   }(document, 'script', 'facebook-jssdk'));
-	</script>
 	<title>Safe House Movement</title>
 </head>
 <body>
@@ -41,7 +19,6 @@
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div class="container">
 	<nav class="grid_11 prefix_1">
 		<ul>
 			<li><a href="index.html" class="active">Home</a></li>
@@ -66,10 +43,10 @@
 			<p> Videos and Photos of what Safehouse has done</p>
 			<a href=""><h3 class="button">Videos ></h3></a>
 		</div>
-		<a href="https://www.facebook.com/safehousemovement">
 		<div class="social box">
 			<h2> Safehouse's Facebook </h2>
 			<p> Like us on Facebook to stay updated.</p>
+			<div class="fb-like" data-href="https://www.facebook.com/safehousemovement" data-send="true" data-width="450" data-show-faces="true" data-font="arial"></div>
 		</div>
 		</a>
 	</aside>
