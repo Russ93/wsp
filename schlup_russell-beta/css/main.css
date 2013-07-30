@@ -29,15 +29,23 @@ section img {
 	border-bottom: solid 1px #2ab2ae;
 	margin-bottom: 15px;
 }
+.topline {
+	border-top: solid 1px #2ab2ae;
+	margin-top: 15px;	
+}
 
 p {
 	font-size: 1em;
+	line-height: 1.75;
+}
+
+figcaption {
+	line-height: 1.25;
 }
 
 select {
 	border: solid 1px #999;
 	border-radius: 2px;
-	height: 35px;
 }
 
 input {
@@ -73,10 +81,11 @@ h2 {
 
 h3 {
 	font-size: 1.375em;
+	font-weight: normal;
 }
 
 header h2 {
-	font: 3em/1 "Amatic SC", helvetica, arial, sans-serif;
+	font: 2em/1 "Avenir", helvetica, arial, sans-serif;
 	margin-bottom: 26px;
 }
 
@@ -169,6 +178,10 @@ figure {
 	margin: 10px 0;
 }
 
+label {
+	margin-right: 5px;
+}
+
 .cinfo {
 	font-size: 1.2em;
 }
@@ -181,9 +194,21 @@ fieldset {
 	margin: 26px 0;
 }
 
+.monthly {
+	padding-bottom: 15px;
+}
+
 .price {
 	font-size: 2em;
 	color: #f11;
+}
+
+.left {
+	float: left;
+}
+
+.clear {
+	clear: both;
 }
 
 /*--------------------CTA --------------------*/
@@ -198,6 +223,7 @@ fieldset {
 	height: 136px;
 	border-radius: 5px;
 	color: #eee;
+	overflow: hidden;
 }
 
 .box h2 {
@@ -212,16 +238,17 @@ fieldset {
 }
 
 .media {
-	background: url(../images/media.png) right top no-repeat #596f7a;
+	background: url(../images/media.png) right top no-repeat #567;
 	margin-bottom: 26px;
 }
 
 .social {
-	background: url(../images/social.png) right top no-repeat #11658b;
+	background: url(../images/social.png) right top no-repeat #168;
 }
 
-.social-box #thing.fb-like {
-	max-width: 250px;
+/*--------------------Facebook Override --------------------*/
+#thing {
+	margin-left: 10px;
 }
 
 /*--------------------Footer --------------------*/
@@ -237,7 +264,7 @@ footer a {
 /*--------------------@Media --------------------*/
 @media screen and (max-width: 1010px) {
 	.box {
-	height: 105px;
+	height: 130px;
 }
 
 .button {
@@ -275,7 +302,7 @@ nav.grid_11 {
 }
 
 nav.grid_11 ul {
-	font-size: 1.5em;
+	font-size: 2em;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -306,5 +333,8 @@ nav.grid_11.prefix_1 h1 {
 	padding-left: 0;
 	padding-right: 0;
 }
+
+}
+@media screen and (max-width: 495px) {
 
 }
